@@ -12,9 +12,6 @@ public class SuccessKilled {
 
     private Date createTime;
 
-    //多对一
-    private SecKill secKill;
-
     @Override
     public String toString() {
         return "SuccessKilled{" +
@@ -26,13 +23,17 @@ public class SuccessKilled {
                 '}';
     }
 
-    public SecKill getSecKill() {
+    public Seckill getSecKill() {
         return secKill;
     }
 
-    public void setSecKill(SecKill secKill) {
+    public void setSecKill(Seckill secKill) {
         this.secKill = secKill;
     }
+
+    //多对一
+    private Seckill secKill;
+
 
     public long getSeckillId() {
         return seckillId;

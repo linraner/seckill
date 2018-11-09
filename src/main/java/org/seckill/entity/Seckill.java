@@ -3,8 +3,8 @@ package org.seckill.entity;
 
 import java.util.Date;
 
-public class SecKill {
-    private long seckillID;
+public class Seckill {
+    private long seckillId;
 
     private String name;
 
@@ -14,27 +14,28 @@ public class SecKill {
 
     private Date endTime;
 
-    private Date createTime;
-
     @Override
     public String toString() {
-        return "SecKill{" +
-                "seckillID=" + seckillID +
+        return "Seckill{" +
+                "seckillId=" + seckillId +
                 ", name='" + name + '\'' +
                 ", number=" + number +
-                ", stratTime=" + startTime +
+                ", startTime=" + startTime +
                 ", endTime=" + endTime +
                 ", createTime=" + createTime +
                 '}';
     }
 
-    public long getSeckillID() {
-        return seckillID;
+    public long getSeckillId() {
+        return seckillId;
     }
 
-    public void setSeckillID(long seckillID) {
-        this.seckillID = seckillID;
+    public void setSeckillId(long seckillId) {
+        this.seckillId = seckillId;
     }
+
+    private Date createTime;
+
 
     public String getName() {
         return name;
