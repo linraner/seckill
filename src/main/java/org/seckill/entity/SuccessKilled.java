@@ -3,37 +3,13 @@ package org.seckill.entity;
 import java.util.Date;
 
 public class SuccessKilled {
-
     private long seckillId;
-
     private long userPhone;
-
     private short state;
-
     private Date createTime;
 
-    @Override
-    public String toString() {
-        return "SuccessKilled{" +
-                "seckillId=" + seckillId +
-                ", userPhone=" + userPhone +
-                ", state=" + state +
-                ", createTime=" + createTime +
-                ", secKill=" + secKill +
-                '}';
-    }
-
-    public Seckill getSecKill() {
-        return secKill;
-    }
-
-    public void setSecKill(Seckill secKill) {
-        this.secKill = secKill;
-    }
-
-    //多对一
-    private Seckill secKill;
-
+    //多对一,因为一件商品在库存中有很多数量，对应的购买明细也有很多。
+    private Seckill seckill;
 
     public long getSeckillId() {
         return seckillId;
@@ -67,4 +43,21 @@ public class SuccessKilled {
         this.createTime = createTime;
     }
 
+    public Seckill getSeckill() {
+        return seckill;
+    }
+
+    public void setSeckill(Seckill seckill) {
+        this.seckill = seckill;
+    }
+
+    @Override
+    public String toString() {
+        return "SuccessKilled{" +
+                "seckillId=" + seckillId +
+                ", userPhone=" + userPhone +
+                ", state=" + state +
+                ", createTime=" + createTime +
+                '}';
+    }
 }
