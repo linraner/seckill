@@ -84,4 +84,11 @@ fabric.properties
 
 # Editor-based Rest Client
 .idea/httpRequests
-D:\program\study-java\seckill\src\main\resources\jdbc.properties
+src/main/resources/jdbc.properties
+src/test/resources/
+target/classes/jdbc.properties
+target/classes/mapper/
+target/classes/mybatis-config.xml
+target/classes/spring/
+target/generated-sources/
+target/generated-test-sources/
